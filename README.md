@@ -29,6 +29,13 @@ Setup:
         4> Run the command 
                   
                     bash ./myruby.sh
+
+                        [or]
+
+                    curl -s https://raw.github.com/QuantiumIndia/ubuntu-rails-setup/master/myruby.sh | bash
+
+        Note: To use second command to install script, first you have to download "000-default" file from repo.
+
                   
         5> Now, the above command would have installed all the required setup. while running the bash command the script will as for a Mysql password.
             please enter the password and press enter.
