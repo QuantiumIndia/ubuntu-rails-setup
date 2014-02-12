@@ -1,9 +1,13 @@
+wget https://raw.github.com/QuantiumIndia/ubuntu-rails-setup/master/000-default
+
 set -e
 set -x
 
 read -s -p "Enter MYSQL Password  : " my_password
 sudo apt-get update
 sudo apt-get  -y upgrade
+sudo apt-get install git
+sudo apt-get install curl
 sudo apt-get install -y tasksel git build-essential zlib1g-dev
 sudo apt-get install -y ruby1.9.1-full
 

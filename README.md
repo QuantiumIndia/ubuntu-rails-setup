@@ -1,7 +1,8 @@
 ubuntu-rails-setup
 ==================
+curl -s https://raw.github.com/QuantiumIndia/ubuntu-rails-setup/master/myruby.sh | bash
 
-Set up ubuntu for glue and other rails app automatically this is the script for ruby , rails , apache server(ngnix) , Mysql
+Set up ubuntu for glue and other rails app automatically this is the script for ruby, rails, apache server(ngnix), Mysql
 
   This is for UBUNTU v-12.0.4
   
@@ -9,6 +10,11 @@ Set up ubuntu for glue and other rails app automatically this is the script for 
         
         2> Rails v-3.2.14
 
+        3> Apache2
+
+        4> Mysql
+
+        5> Passenger
 
 Please ensure that the script runs completely before you exit !!
 
@@ -29,13 +35,6 @@ Setup:
         4> Run the command 
                   
                     bash ./myruby.sh
-
-                        [or]
-
-                    curl -s https://raw.github.com/QuantiumIndia/ubuntu-rails-setup/master/myruby.sh | bash
-
-        Note: To use second command to install script, first you have to download "000-default" file from repo.
-
                   
         5> Now, the above command would have installed all the required setup. while running the bash command the script will as for a Mysql password.
             please enter the password and press enter.
