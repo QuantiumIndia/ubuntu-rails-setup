@@ -1,6 +1,7 @@
 set -e
 set -x
 
+read -s -p "Enter MYSQL Password  : " my_password
 sudo apt-get update
 sudo apt-get  -y upgrade
 sudo apt-get install -y tasksel git build-essential zlib1g-dev
@@ -31,6 +32,5 @@ sudo chmod a-w /etc/ssh/sshd_config.original
 
 sudo cp 000-default /etc/apache2/sites-enabled/
 sudo service apache2 restart
-read -s -p "Enter MYSQL Password  : " my_password
 mysqladmin -u root password $my_password #Mysql Password
 sudo service mysql restart
