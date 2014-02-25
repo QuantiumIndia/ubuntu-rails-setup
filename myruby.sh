@@ -38,3 +38,6 @@ sudo cp 000-default /etc/apache2/sites-enabled/
 sudo service apache2 restart
 mysqladmin -u root password $my_password #Mysql Password
 sudo service mysql restart
+
+yes | sudo apt-get install python-pip
+yes | sudo pip install xlrd --upgrade
